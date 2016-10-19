@@ -1,6 +1,9 @@
 iXu — Inform 7 Extensions Updater
 =================================
 
+Project website:
+[https://tajmone.github.io/iXu/](https://tajmone.github.io/iXu/)
+
 >   WARNING: This application was designed for older versions of Inform7
 >   (\<6L02), predating the introduction of the **public library** of extensions
 >   feature!
