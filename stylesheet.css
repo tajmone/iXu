@@ -7,17 +7,21 @@ body {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 }
-div#header {
+div#header,
+div#footer {
 	background-color: #8EF7A0;
+	color: #000000;
 	height: 30px;
 	padding: 5px 0 0 0;
 	font-size: 18px;
+	font-weight: bold;
 }
-div#header a {
+
+div#header a,
+div#footer a {
 	color: #000000;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font-weight: bold;
 }
 div#main {
 	margin-left: auto;
