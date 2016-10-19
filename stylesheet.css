@@ -1,0 +1,50 @@
+body {
+	background-color: #000000;
+	color: #8EF7A0;
+	
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+div#header {
+	background-color: #8EF7A0;
+	height: 30px;
+	padding: 5px 0 0 0;
+	font-size: 18px;
+}
+div#header a {
+	color: #000000;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-weight: bold;
+}
+div#main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	text-align: left;
+
+}
+div#main p,
+a {
+	font-size: large;
+}
+
+div#main p.slogan {
+	text-align: center;
+	color: #FF6600;
+	font-weight: bold;
+	font-size: x-large;
+	margin-top 50px;
+	margin-bottom: 20px;
+}
+
+
+a:link {
+	color: #9BC4F7;
+}
+a:visited {
+	color: #DD99F3;
+
+}
