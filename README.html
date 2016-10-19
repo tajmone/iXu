@@ -1,0 +1,137 @@
+<h1 id="ixu-inform-7-extensions-updater">iXu — Inform 7 Extensions Updater</h1>
+<blockquote>
+<p>WARNING: This application was designed for older versions of Inform7 (&lt;6L02), predating the introduction of the <strong>public library</strong> of extensions feature!</p>
+</blockquote>
+<blockquote>
+<p>Read carefully before using, to avoid overwriting your installed extensions.</p>
+</blockquote>
+<h2 id="toc">TOC</h2>
+<ul>
+<li><p><a href="#introduction">Introduction</a></p></li>
+<li><p><a href="#read-before-executing">READ BEFORE EXECUTING!</a></p></li>
+<li><p><a href="#pre-built-binaries">Pre-built Binaries</a></p></li>
+<li><p><a href="#building-ixu-from-source">Building iXu From Source</a></p></li>
+<li><p><a href="#repository-contents">Repository Contents</a></p></li>
+<li><p><a href="#why-ixu">Why iXu?</a></p></li>
+<li><p><a href="#the-post-6l02-i7-era">The post-6L02 I7 Era</a></p></li>
+<li><p><a href="#usage">Usage</a></p></li>
+<li><p><a href="#how-ixu-works">How iXu Works</a></p></li>
+<li><p><a href="#ixus-present-day-uses">iXu’s Present-Day Uses…</a></p>
+<ul>
+<li><p><a href="#working-with-inform7-pre-6l02">Working With Inform7 pre-6L02</a></p></li>
+<li><p><a href="#tweaking-ixu-1-disable-writing-to-i7-extensions-folder">Tweaking iXu 1: Disable Writing to I7 Extensions Folder</a></p></li>
+<li><p><a href="#tweaking-ixu-2-pointing-it-to-public-library">Tweaking iXu 2: Pointing It to Public Library</a></p></li>
+</ul></li>
+<li><p><a href="#latest-version">Latest Version</a></p></li>
+<li><p><a href="#end-of-development-notice">End of Development Notice</a></p></li>
+<li><p><a href="#contributing">Contributing</a></p></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>iXu (Inform Extensions Updater) was a free stand-alone application for updating Inform7 (pre-6L02) extensions under Microsoft Windows. It can still be used with Inform7 pre-6L02 releases.</p>
+<p>iXu was created by Tristano Ajmone in September 2010 using <a href="https://www.autoitscript.com">AutoIt Script</a>.</p>
+<p>Its now being released into <strong>public domain</strong> (<a href="http://unlicense.org/">http://unlicense.org</a>) — see <a href="LICENSE">LICENSE file</a> for more details.</p>
+<h2 id="read-before-executing">READ BEFORE EXECUTING!</h2>
+<p><strong>ON FIRST RUN IXU WILL OVERWRITE ALL THE EXTENSIONS CONTAINED IN INFORM 7 EXTENSIONS FOLDER!!!</strong></p>
+<p>That is: it will download every extension that is available on Inform7.com’s extensions RSS page, and copy it to I7 extensions folder, overwriting them without asking confirmation. This means that any extensions coming from sources other than Inform7.com should not be at risk of being overwritten, still …</p>
+<p><strong>BEFORE LAUNCHING IXU UPDATE MAKE A COPY OF YOUR INFORM 7 EXTENSIONS FOLDER!</strong></p>
+<p>If by any chance you have manually changed some third pary extensions, and the extension gets overwritten by iXu download, you’d lose your changes.</p>
+<h2 id="pre-built-binaries">Pre-built Binaries</h2>
+<p>Pre-built Win x32 binaries are available for download under releases:</p>
+<ul>
+<li><a href="https://github.com/tajmone/iXu">https://github.com/tajmone/iXu/releases/latest</a></li>
+</ul>
+<h2 id="building-ixu-from-source">Building iXu From Source</h2>
+<p>Building requires <a href="https://www.autoitscript.com/autoit3/files/archive/autoit/">AutoIt v3.3.6.0</a> (later versions might not work without code adaptations):</p>
+<ul>
+<li><p><a href="https://www.autoitscript.com/autoit3/files/archive/autoit/autoit-v3.3.6.0-setup.exe">autoit-v3.3.6.0-setup.exe</a> (installer — direct link)</p></li>
+<li><p><a href="https://www.autoitscript.com/autoit3/files/archive/autoit/autoit-v3.3.6.0-sfx.exe">autoit-v3.3.6.0-sfx.exe</a> (Self Extracting Archive — direct link)</p></li>
+</ul>
+<h2 id="repository-contents">Repository Contents</h2>
+<p>The iXu repository contains the following folders:</p>
+<ul>
+<li><p><code>/src/</code> — the AutoIt Script source code of iXu, plus the “iXu User Guide” in PDF.</p></li>
+<li><p><code>/src/INCLUDES/</code> — additional resources needed at compilation-time for inclusion into the final binary executable (GUI graphics and HTML templates).</p></li>
+<li><p><code>/iXu 3D Box/</code> — graphic files and template for the 3D product-box presentation image of iXu (includes also Photoshop and BoxShot 3D files).</p></li>
+<li><p><code>/iXu GUI/</code> — graphic source files for iXu’s GUI graphic resources.</p></li>
+<li><p><code>/iXu Logo/</code> — iXu’s Logo design, vector format (PSD and AI).</p></li>
+<li><p><code>/iXu User Guide/</code> — the userguide in MS Word source file.</p></li>
+</ul>
+<p>Each folder contains a <code>README.md</code> file with more details.</p>
+<h2 id="why-ixu">Why iXu?</h2>
+<p>Before the Inform 7 <a href="http://inform7.com/download/release/6L02/">6L02 release</a> (April 2014) extensions had to be manually downloaded (and updated) from Inform7.com’s extensions page:</p>
+<ul>
+<li><a href="http://inform7.com/write/extensions/" class="uri">http://inform7.com/write/extensions/</a></li>
+</ul>
+<p>From release 6L02 onward, I7 user interface includes a Public Library extensions panel, which allows to download and update extensions from within the application.</p>
+<p>iXu was intended as a tool for those who’d like to have on their harddisk a copy of all the extensions available at Inform7.com’s extensions page.</p>
+<p>Another advantage of using iXu was that, when it updated an extension, it kept date-stamped copies of previous versions; making it easy to revert to a given version of any extension if required for compatibility issues. One of the shortcomings of Inform 7 website’s extension page was that it provided only the latest version of extensions.</p>
+<p>iXu still works today, because the Inform7.com’s extensions page is still active — but these extension are no longer intended for the latest versions of I7!</p>
+<h2 id="the-post-6l02-i7-era">The post-6L02 I7 Era</h2>
+<p>Since Inform 7 introduced the public library feature (<a href="http://inform7.com/download/release/6L02/">6L02 release</a>, April 2014), iXu’s <em>raison d’être</em> has been exhausted. But iXu could still be useful, with some minor tweaks on how it works.</p>
+<p>Now the Inform 7 app fecthes its public library extensions from:</p>
+<ul>
+<li><a href="http://www.emshort.com/pl/payloads/" class="uri">http://www.emshort.com/pl/payloads/</a></li>
+</ul>
+<p>iXu still fetches extension from Inform7.com’s extensions page (via <a href="http://inform7.com/extensions/I7ExtensionsRSS.xml">RSS Feed</a>):</p>
+<ul>
+<li><a href="http://inform7.com/write/extensions/" class="uri">http://inform7.com/write/extensions/</a></li>
+</ul>
+<p>So, there are effectively two official I7-extensions pools — something rather confusing. Inform7.com’s extensions page is now considered the “older extensions pool”, which is kept for good reasons:</p>
+<ol style="list-style-type: decimal">
+<li><p>In 2014 Inform7 has undergone some major updates braking backward compatibility, thus rendering many extensions obsolete.</p></li>
+<li><p>Some people might need access to pre-6L02 extensions because they need some extensions which have not yet been update to newer versions of I7, and prefer to work with an older version of Inform7 instead of loosing the advantages of such extensions.</p></li>
+<li><p>Someone wants to update an old extension to the lastest version Inform7, so that i can be included among the <strong>public library</strong> extensions.</p></li>
+</ol>
+<p>For more information on this topic, visit these links:</p>
+<ul>
+<li><p><a href="http://www.intfiction.org/forum/viewtopic.php?f=7&amp;t=17890" class="uri">http://www.intfiction.org/forum/viewtopic.php?f=7&amp;t=17890</a></p></li>
+<li><p><a href="https://emshort.wordpress.com/2015/04/15/inform-extension-updating/" class="uri">https://emshort.wordpress.com/2015/04/15/inform-extension-updating/</a></p></li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>iXu is very simple to use. The user is presented with an interface with a single button START. Pressing the button will start the extensions update process.</p>
+<p>When the update is finished the button will read VIEW LOG and can be pressed to view the log file containing the details of the extensions downloaded (if any) and the failed downloads (if any).</p>
+<p>It’s as simple as that.</p>
+<h2 id="how-ixu-works">How iXu Works</h2>
+<p>The way iXu works is very simple and it takes as a reference for decisions two folders which are located inside the iXu program folder: “<code>Extensions Archive</code>” and “<code>Extensions Download</code>”. These folders will be created at first execution of iXu.</p>
+<p>The operative scheme of iXu is as follows:</p>
+<ul>
+<li><p>It connects to Inform7.com’s Extension RSS page and extracts a list of all the available extensions.</p></li>
+<li><p>Running through the list it checks for each extension if iXu’s “<code>Extensions Archive</code>” folder contains a copy of the extension matching its publication date, if not it downloads it in the “<code>Extensions Download</code>” folder (overwriting previous versions of it, if any), <strong>then copies the extension to Inform 7 extensions folder overwriting any existing version</strong>. Finally, it creates a copy of the extension in the “<code>Extensions Archive</code>” folder (adding at the beginning of the filename the author’s name, and at the end of the filename a timestamp with the release date).</p></li>
+<li><p>After processing all the extensions in the list, iXu creates an updated <strong>Extensions List HTML page</strong> contaning the description of all downloaded extensions (latest version only, no duplicates) as presented on Inform7.com website.</p></li>
+<li><p>A <strong>log file</strong> is then rendered available to the user through the interface’s only button. The log contains a list of the downloaded extensions (if any) and the failed downloads (if any).</p></li>
+</ul>
+<p>iXu therefore bases his decision to download an extension solely on the presence or absence of a copy of the give extension in the “<code>Extensions Archive</code>” folder. This means that if you delete any copies of an extensions in that folder you’ll force iXu to reload that extension on next execution. The Archive folder doesn’t contain any subfolders: the author’s name is prefixed to the extensions’name, the date of the extensions’s publication is appended to it. If for any reasons you need an older version of an extension, this is the folder where you should look for it.</p>
+<p>It is not clear to me if Inform7.com RSS extensions page lists older versions of an extension or only the latest releases of it, but as extensions do get updated iXu will keep in his local folder copies of the older editions downloaded of any extension. This might come handy in case you’d need an older version of an extension for any reason.</p>
+<p>The “<code>Extensions Download</code>” folder only contains the updated version of any extension (unlike the Archive folder which contains all available versions of any extension). Each extension is placed inside a folder with it’s author’s name, mirroring the system used in Inform 7 actual extensions folder. The purpose of this folder is to keep a copy of all extensions downloaded by iXu. Extensions inside this folder are always the latest release. Deleting extensions inside this folder has no effect on iXu’s behaviour, but keep in mind that iXu will not redownload them.</p>
+<p>Every extension downloaded will have it’s “creation” and “last modified” date set to the date of publication on Inform 7 RSS page.</p>
+<p>The log file is deleted and replace at each execution of iXu, so if for any reason you want to keep a copy of your log files rename them after each execution.</p>
+<p>If iXu doesn’t find Inform 7 extensions folder (it assumes it will be: <code>MyDocuments/Inform/Extensions</code>) it will just download to its “<code>Extensions Download</code>” folder and you’ll have to “install” extensions manually by copying the contents of “<code>Extensions Download</code>” folder to Inform 7 extensions folder.</p>
+<h2 id="ixus-present-day-uses">iXu’s Present-Day Uses…</h2>
+<p>Let’s see if iXu can still be employed — either as it is, or by tweaking its source code.</p>
+<h3 id="working-with-inform7-pre-6l02">Working With Inform7 pre-6L02</h3>
+<p>iXu can still be used (out of the box) by anyone wishing to work with pre-6L02 Inform7.</p>
+<p>Since there are still lots of great extensions which have not been updated to work with post-6L02 Inform7, there are still as many good reasons to opt for working with older versions of Inform7. In this case, iXu is a precious tool that automates extensions downloading and updating, and produces neat HTML reports on the status of the extensions.</p>
+<h3 id="tweaking-ixu-1-disable-writing-to-i7-extensions-folder">Tweaking iXu 1: Disable Writing to I7 Extensions Folder</h3>
+<p>iXu could be tweaked so it doesn’t copy any extensions to Inform7 extensions folders, only saving in its local “<code>Extensions Archive</code>” folder any newer extensions found on Inform7.com — this only requires to comment out the lines of code which handle copying the downloaded extensions to I7 extensions folder (lines 424-428):</p>
+<pre><code>; Copy to Inform 7 Extensions Folder
+if $extensions_folder_exists Then
+    DirCreate ($I7_ExtensionsFolder &amp; &quot;\&quot; &amp; $ItemAuthorCleaned)
+    FileCopy ($FileToSave, $I7_ExtensionsFolder &amp; &quot;\&quot; &amp; $ItemAuthorCleaned  &amp; &quot;\&quot; &amp; $ItemFileNameCleaned &amp; &quot;.i7x&quot;,1)
+EndIf</code></pre>
+<h3 id="tweaking-ixu-2-pointing-it-to-public-library">Tweaking iXu 2: Pointing It to Public Library</h3>
+<p>I’m not sure if this would be of any use, but iXu could be tweaked to point to the <strong>public library</strong> instead of Inform7.com:</p>
+<ul>
+<li><a href="http://www.emshort.com/pl/payloads/" class="uri">http://www.emshort.com/pl/payloads/</a></li>
+</ul>
+<p>Since I7 already handles this from within the user interface, it might be quite useless — unless intended as a tool for keeping a date-stamped archive of all extensions releases.</p>
+<p>Anyhow, this would require some major tweaking of iXu’s source, because iXu relies on Inform7.com xml RSS feed — whereas the payloads page doesn’t provide RSS feeds.</p>
+<h2 id="latest-version">Latest Version</h2>
+<p>iXu last update was version 2.4 (beta), dating back September 2010.</p>
+<p>Even though still tagged as Beta release, iXu has been used extensively without problem reports; so it can be considered stable.</p>
+<p>Version Beta 2.4 solved an issue that caused iXu to crash with systems other than Windows XP SP3. Now it should work with all Windows editions from XP onward.</p>
+<h2 id="end-of-development-notice">End of Development Notice</h2>
+<p>I will no longer maintain iXu, and it has been too many years since I’ve laid my hands on it source code. I’m releasing its source so that anyone who might feel to take on the project can do so, but I won’t be following its developement any further.</p>
+<h2 id="contributing">Contributing</h2>
+<p>If you want to contribute to iXu’s developement, just fork it and carry on from there — but don’t open issues on this repo or contact me expecting help.</p>
+<p>iXu is now public domain, so feel free of revamping it however you wish — including, changing its name and logo. You’re under no obligations of mentioning the original project and author, but mentionings would be appreciated.</p>
+<h2 id="section"> </h2>

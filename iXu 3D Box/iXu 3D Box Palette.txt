@@ -1,0 +1,87 @@
+COLOR SPEC SHEET
+
+
+Color 1: 
+    #00FF14
+    RGB: 0 255 20
+    HSB: 125 100 100
+    HSL: 83 240 120
+
+Color 2: 
+    #FE796D
+    RGB: 254 121 109
+    HSB: 5 57 100
+    HSL: 3 237 171
+
+Color 3: 
+    #FEC66D
+    RGB: 254 198 109
+    HSB: 37 57 100
+    HSL: 25 237 171
+
+Color 4: 
+    #F4DE23
+    RGB: 244 222 35
+    HSB: 54 86 96
+    HSL: 36 217 131
+
+Color 5: 
+    #85E896
+    RGB: 133 232 150
+    HSB: 130 43 91
+    HSL: 87 164 172
+
+Color 6: 
+    #5AD272
+    RGB: 90 210 114
+    HSB: 132 57 82
+    HSL: 88 137 141
+
+Color 7: 
+    #C5C5C5
+    RGB: 197 197 197
+    HSB: 0 0 77
+    HSL: 0 0 185
+
+Color 8: 
+    #C4B7A0
+    RGB: 196 183 160
+    HSB: 38 18 77
+    HSL: 26 56 168
+
+Color 9: 
+    #BFAD52
+    RGB: 191 173 82
+    HSB: 50 57 75
+    HSL: 33 110 128
+
+Color 10: 
+    #5EA36C
+    RGB: 94 163 108
+    HSB: 132 42 64
+    HSL: 88 65 121
+
+Color 11: 
+    #807768
+    RGB: 128 119 104
+    HSB: 38 19 50
+    HSL: 25 25 109
+
+Color 12: 
+    #7F7336
+    RGB: 127 115 54
+    HSB: 50 57 50
+    HSL: 33 97 85
+
+Color 13: 
+    #54745B
+    RGB: 84 116 91
+    HSB: 133 28 45
+    HSL: 89 38 94
+
+Color 14: 
+    #37603E
+    RGB: 55 96 62
+    HSB: 130 43 38
+    HSL: 87 65 71
+

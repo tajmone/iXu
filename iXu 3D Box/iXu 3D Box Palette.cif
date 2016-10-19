@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ColorImpactFile FileFormat="2">
+  <Application Name="ColorImpact 2" Version="2.87"/>
+  <ColorScheme>
+    <Color Hex="00FF14"/>
+    <Color Hex="FE796D"/>
+    <Color Hex="5AD272"/>
+    <Color Hex="54745B"/>
+    <Color Hex="F4DE23"/>
+    <Color Hex="C5C5C5"/>
+    <Color Hex="FEC66D"/>
+    <Color Hex="7F7336"/>
+    <Color Hex="BFAD52"/>
+    <Color Hex="5EA36C"/>
+    <Color Hex="54745B"/>
+    <Color Hex="37603E"/>
+    <Color Hex="807768"/>
+    <Color Hex="C4B7A0"/>
+    <Color Hex="85E896"/>
+  </ColorScheme>
+</ColorImpactFile>
