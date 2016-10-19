@@ -58,6 +58,9 @@ Its now being released into **public domain**
 ([http://unlicense.org](http://unlicense.org/)) — see [LICENSE file](LICENSE)
 for more details.
 
+It was tested on Windows XP and Windows 10 (64 bits). So it should work on all
+MS Windows versions capable of running Inform7!
+
 READ BEFORE EXECUTING!
 ----------------------
 
@@ -77,9 +80,10 @@ extension gets overwritten by iXu download, you’d lose your changes.
 Pre-built Binaries
 ------------------
 
-Pre-built Win x32 binaries are available for download under releases:
+Pre-built Win x32 binaries are available for download under [releases
+page](https://github.com/tajmone/iXu/releases/latest), or via this direct link:
 
--   [https://github.com/tajmone/iXu/releases/latest](https://github.com/tajmone/iXu)
+-   [iXu.v2.4.-.Win.x32.binaries.zip](https://github.com/tajmone/iXu/releases/download/v2.4/iXu.v2.4.-.Win.x32.binaries.zip)
 
 Building iXu From Source
 ------------------------
@@ -176,9 +180,9 @@ pool”, which is kept for good reasons:
 
 For more information on this topic, visit these links:
 
--   [http://www.intfiction.org/forum/viewtopic.php?f=7&t=17890](http://www.intfiction.org/forum/viewtopic.php?f=7&t=17890)
+-   <http://www.intfiction.org/forum/viewtopic.php?f=7&t=17890>
 
--   [https://emshort.wordpress.com/2015/04/15/inform-extension-updating/](https://emshort.wordpress.com/2015/04/15/inform-extension-updating/)
+-   <https://emshort.wordpress.com/2015/04/15/inform-extension-updating/>
 
 Usage
 -----
